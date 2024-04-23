@@ -1,0 +1,63 @@
+@import "../app.component.css";
+.results {
+  display: grid;
+  column-gap: 14px;
+  row-gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.logo-home{
+  width: 100px;
+  height: 100px;
+}
+input[type="text"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+  padding: 3px 7px;
+  font-size: 9px;
+  height: 39px;
+  width: 39px;
+  color: var(--primary-color);
+  align-items: center;
+  border-color: var(--primary-color);
+  border-radius: 9px;
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+}
+
+button:hover {  
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.25s, color 0.25s, background-color 0.25s;
+}
+
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  input[type="text"] {
+      width: 70%;
+  }   
+}
+@media (max-width: 499px) {
+  .results {
+      grid-template-columns: 1fr;
+  }    
+}
