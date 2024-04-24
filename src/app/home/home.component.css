@@ -16,8 +16,7 @@
 
 
 .logo-home:hover {
-  transform: scale(1.05);
-  /* Slightly enlarges the logo on hover to indicate interactivity */
+  transform: scale(1.09);
 }
 
 
@@ -41,7 +40,7 @@ input[type="text"] {
 button {
   height: 29px;
   order: 2;
-  color: #0576ffb1;
+  color: #292d3f;
   border-color: var(--primary-color);
   border-radius: 9px;
   cursor: pointer;

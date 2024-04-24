@@ -3,8 +3,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #24292f;
-    height: 700px;
+    background-color: #292d3f;
+    height: 729px;
     /* Adjust based on content */
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
