@@ -16,6 +16,7 @@ export class HomeComponent {
   }
 }
 
+
 // export class HomeComponent {
 // activate() {
 // throw new Error('Method not implemented.');

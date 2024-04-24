@@ -9,7 +9,17 @@
   width: 100px;
   height: 100px;
   margin-right: 29px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
 }
+
+
+.logo-home:hover {
+  transform: scale(1.05);
+  /* Slightly enlarges the logo on hover to indicate interactivity */
+}
+
 
 .input-button-wrapper {
   display: flex;
