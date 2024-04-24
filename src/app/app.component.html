@@ -1,10 +1,11 @@
 <main>
   <header>
+    <button (click)="sidebar.open()">Up</button>
   </header>
   <section class="content">
-    <app-home></app-home>
-  </section>  
+    <app-home (openSidebarRequest)="sidebar.open()"></app-home>
+  </section>
+  <app-sidebar #sidebar></app-sidebar>
 </main>
-
 
 <router-outlet />

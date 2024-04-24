@@ -1,48 +1,45 @@
-@import "../app.component.css";
-.results {
-  display: grid;
-  column-gap: 14px;
-  row-gap: 14px;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
-  margin-top: 50px;
-  justify-content: space-around;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.logo-home{
+.logo-home {
+  order: 2;
   width: 100px;
   height: 100px;
+  margin-right: 29px;
+}
+
+.input-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59%;
+  order: 1;
 }
 
 input[type="text"] {
+  flex-grow: 0.5;
+  max-width: 29%;
   border: solid 1px var(--primary-color);
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 4px;
-  display: inline-block;
-  width: 29%;
+  padding: 9px;
+  border-radius: 9px;
+  margin-right: 3px;
 }
 
-button:hover {  
+button {
+  height: 29px;
+  order: 2;
   color: var(--primary-color);
-  background-color: var(--primary-color);
   border-color: var(--primary-color);
-  border-radius: 8px;
-  font-weight: 500;
+  border-radius: 9px;
   cursor: pointer;
   transition: border-color 0.25s, color 0.25s, background-color 0.25s;
 }
 
-
-@media (min-width: 500px) and (max-width: 768px) {
-  .results {
-      grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  .input-button-wrapper {
+    width: 100%;
   }
-  input[type="text"] {
-      width: 70%;
-  }   
-}
-@media (max-width: 499px) {
-  .results {
-      grid-template-columns: 1fr;
-  }    
 }

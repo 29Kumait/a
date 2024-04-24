@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,11 +6,19 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']  
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-activate() {
-throw new Error('Method not implemented.');
+  @Output() openSidebarRequest = new EventEmitter<void>();
+
+  openSidebar() {
+    this.openSidebarRequest.emit();
+  }
 }
 
-}
+// export class HomeComponent {
+// activate() {
+// throw new Error('Method not implemented.');
+// }
+
+// }

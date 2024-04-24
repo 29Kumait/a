@@ -1,0 +1,17 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    height: 300px;
+    /* Adjust based on content */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.sidebar.visible {
+    transform: translateY(0);
+}
