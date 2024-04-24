@@ -41,7 +41,7 @@ input[type="text"] {
 button {
   height: 29px;
   order: 2;
-  color: var(--primary-color);
+  color: #0576ffb1;
   border-color: var(--primary-color);
   border-radius: 9px;
   cursor: pointer;
